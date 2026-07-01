@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Done & Dusted",
+  "description": "Post Craft CMS handoff comments to Jira with the right template, status, and assignee.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Done & Dusted"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icons.png",
+    "48": "icons/icons.png",
+    "128": "icons/icons.png"
+  },
+  "permissions": ["storage", "tabs", "windows", "clipboardRead", "sidePanel"],
+  "host_permissions": ["https://*.atlassian.net/*"]
+}
